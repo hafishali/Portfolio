@@ -1,0 +1,250 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Handjet&family=Lugrasimo&family=Noto+Sans+JP:wght@800&display=swap');
+/* h1{
+    font-family: 'Handjet', cursive;
+}
+h2{
+    font-family: 'Borel', cursive;
+} */
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Borel', cursive;
+    
+}
+.container{
+    width: 100%;
+    /* view port height ivh=19.2px */
+    height: 100vh;
+    position: relative;
+    background-color:white;
+}
+.navbar{
+    /* this is used to view by side of div */
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 30px;
+    /* vertically center */
+    align-items: center;
+    margin-top: 20px;
+
+}
+.logo{
+    width: 130px;
+}
+.list-item{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.link{
+    color: black;
+    /* to remove underline of a tag */
+    text-decoration: none;
+    font-weight: bold;
+}
+.link:hover{
+    color: red;/* pseudo classes:to turn red color when cursor is pointed */
+}
+.title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.tith1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: rgb(201, 216, 26);
+    font-size: 50px;
+}
+.tita{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;/* to move smoothly */
+    
+}
+.images:hover #shape{
+    bottom: 70px;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 16% 8% 0px 8%;
+    width: 100%;
+    height: 60vh;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 35px;
+}
+.heading span{
+    font-size:25px ;
+    color: rgb(130, 232, 29);
+}
+.about-content{
+    margin-top: 2rem;/* 1 rem =16px */
+    /* to bring information div to side ofabout-image div  */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);/* 1 fr=255px */
+    gap: 2rem;/* to create gap between grids */
+}
+.about-image img{
+    width: 80%;
+    border-radius: 1rem;
+    padding-top: -3px;
+
+}
+.about-details{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify/* to arrange starting and ending on same line */;
+
+}
+.informations{
+    margin-top: 1rem;
+}
+.info-box{
+    margin-bottom: 1rem;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill-img img{
+    width: 90%;
+    padding-left: 4rem;
+
+}
+html{
+    scroll-behavior: smooth;/* to scroll down smoothly throug navigation bar */
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bar-container h3,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: yellow;
+    width: 95%;
+}
+.css-bar{
+    background-color: yellow;
+    width: 88%;
+}
+.react-bar{
+    background-color: yellow;
+    width: 89%;
+}
+.js-bar{
+    background-color: yellow;
+    width: 85%;
+}
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon,.up-arrow {
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 1rem 0px 1rem;
+
+}
+.icon i{
+    font-size: 40px;
+    color: black;
+    padding-top: 10px;
+
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(108, 25, 191),red);
+    
+}
+.icon:hover i{
+    color: white;
+    animation:  shake 0.85s infinite;/* used to animate infinte times */
+}
+@keyframes shake {
+    10% {
+        transform: rotate(20deg);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    30% {
+        transform: rotate(20deg);
+    }
+    40% {
+        transform: rotate(-20deg);
+    }
+}
+footer{
+    margin: 3rem 0px;
+}
+footer p{
+    text-align: center;
+    font-weight: bold;
+}
+.up-arrow{
+    float: right;
+    margin:0px 10px 50px 0px ;
+    background-image: linear-gradient(to bottom right,yellow,red);
+    font-size: 20px;
+}
+
+
